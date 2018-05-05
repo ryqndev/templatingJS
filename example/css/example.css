@@ -3,3 +3,13 @@ body{
     background-color: #25282d;
 
 }
+.card-stuff{
+    height: 300px;
+    width: 250px;
+    float: left;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: black 0 0 15px;
+    border-radius: 5px;
+}
