@@ -14,13 +14,13 @@ var apiData = {
         },
         {
             'domID': 'class3',
-            'title': 'What\'s his Github?',
-            'description': 'You can find it at https://github.com/Ryabn',
+            'title': 'Github?',
+            'description': 'You can find it at github.com /Ryabn',
             'color': '#3f6887'
         },
         {
             'domID': 'class4',
-            'title': 'How can I be as cool as him?',
+            'title': 'help me',
             'description': 'idk star my repo or something so I look impressive ty <3',
             'color': '#4a9b73'
         },
@@ -31,19 +31,19 @@ var apiData = {
             'color': '#b0b252'
         },
         {
-            'domID': 'class1',
+            'domID': 'class6',
             'title': 'Please hire me',
             'description': 'I swear I\'m like totally op at cs',
             'color': '#ad9154'
         },
         {
-            'domID': 'class6',
+            'domID': 'class7',
             'title': 'title7',
             'description': 'description7',
             'color': '#a86f4b'
         },
         {
-            'domID': 'class7',
+            'domID': 'class8',
             'title': 'title8',
             'description': 'description8',
             'color': '#aa5858'

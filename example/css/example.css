@@ -1,15 +1,88 @@
 body{
     color: white;
     background-color: #25282d;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+h2{
+    text-align: center;
+    width: 100vw;
+    font-size: 100px;
+    color: white;
+}
+#display{
+    padding: 50px;
+    width: calc( 100vw - 100px );
+    text-align: center;
+}
+.intro{
+    height: 350px;
+    width: 100vw;
+    padding-top: 50px;
+    background: linear-gradient(270deg, #6e13bd, #2610a5);
+    background-size: 400% 400%;
+    
+    -webkit-animation: titlebg 5s ease infinite;
+    -moz-animation: titlebg 5s ease infinite;
+    animation: titlebg 5s ease infinite;
 
 }
+@-webkit-keyframes titlebg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes titlebg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes titlebg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 .card-stuff{
+    display: inline-table;
     height: 300px;
     width: 250px;
-    float: left;
-    margin: 20px;
     text-align: center;
     padding: 20px;
     box-shadow: black 0 0 15px;
+    margin: 10px;
     border-radius: 5px;
+}
+.description{
+    background-color: white;
+    color: black;
+    height: 160px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 24px;
+}
+
+@media (max-width: 1000px){
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    #display{
+        padding: 5px;
+        width: calc( 100vw - 10px );
+    }
+    .intro{
+        height: 170px;
+    }
+    .card-stuff{
+        width: 150px;
+        height: 200px;
+        padding: 5px;
+    }
+    .description{
+        padding: 10px;
+        font-size: 18px;
+        height: 130px;
+    }
 }
