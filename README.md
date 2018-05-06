@@ -96,3 +96,10 @@ End result:
         </div>
     </body>
 </html>
+```
+
+# Final Important Notes
+
+* The path to the template.html file is the path from your main html file (not the javascript function that calls the library or the library itself) if you attach the function as an onload for the body tag.
+
+* Another note: The library is meant for templating small sections of a website, not entire webpages served through a server. If this is your intention, it will be better off to use a complete js framework that is built to do that.
