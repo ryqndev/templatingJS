@@ -64,5 +64,5 @@ function generateCards(totalNumberOfCards){
 }
 function generateCard(variables){
     var url = 'templates/template.html';
-    template(url, variables, 'display');
+    templatingJS(url, variables, 'display');
 }

@@ -20,7 +20,7 @@ Compared to other html templating engines, such as Underscore.js or Backbone.js,
 * **Ease of use**
 <br>
 
-There is only 1 function in the entire library and it's to produce html code with a template and some variables.
+There are only 2 public functions in the entire library and it's all related to templating
 
 * **Small file size**
 <br>
@@ -49,3 +49,9 @@ The source file is so small, I can count the number of bytes by counting the cha
     The third parameter is the id tag of the div that you want to insert the templated code
 
 And you're done!!
+
+# tJS functions
+
+template(fileName, variables, dom);
+
+changeToken(start, end); 

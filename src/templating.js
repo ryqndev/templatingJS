@@ -1,13 +1,17 @@
-var tJSsT = '{{';
-var tJSeT = '}}';
+var tJSObj = {
+    'startToken' : '{{',
+    'endToken' : '}}',
+}
+
 /**
  * 
- * @param fileName Path to html template file
+ * @param fileName (String) Path to html template file
  * 
- * @param variables JSON array of keys and values
+ * @param variables (JSON) JSON array of keys and values
  * 
+ * @param dom (String) id name of dom element to insert template
  */
-function template(fileName, variables, dom){
+function templatingJS(fileName, variables, dom){
     let tJSxhr = new XMLHttpRequest();
     tJSxhr.onreadystatechange = function () {
         if (tJSxhr.readyState === tJSxhr.DONE){
@@ -32,7 +36,11 @@ function tJSparseFile(template, variables){
 function tJSsepKeys(variables, keys){
     let keyArr = [];
     for(let i = 0; i < keys.length; i++){
-        keyArr.push( tJSsT + keys[i] + tJSeT );
+        keyArr.push( tJSObj.startToken + keys[i] + tJSObj.endToken );
     }
     return keyArr;
+}
+function changeToken(start, end){
+    tJSObj.startToken = start;
+    tJSObj.endToken = end;
 }
