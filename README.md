@@ -14,17 +14,14 @@ The concept behind this is write the html/css code for it once and don't worry a
 
 * **Simplicity** 
 <br> 
-
 Compared to other html templating engines, such as Underscore.js or Backbone.js, templateJS serves only one function and it is to provide html templating with Javascript and you can expect to fully master it in only a couple minutes.
 
 * **Ease of use**
 <br>
-
 There are only 2 public functions in the entire library and it's all related to templating
 
 * **Small file size**
 <br>
-
 The source file is so small, I can count the number of bytes by counting the characters and that's not using a minified file
 
 # How to use templateJS
@@ -40,7 +37,7 @@ The source file is so small, I can count the number of bytes by counting the cha
     * See the examples to fully understand how the library works.
 
 * Step 3: Call the template function
-> template(url, variables, 'display');
+> templatingJS( url, variables, 'display');
 
     The first paramater is the url - which is the path to the template.html file from the html source
 
@@ -52,6 +49,50 @@ And you're done!!
 
 # tJS functions
 
-template(fileName, variables, dom);
+templatingJS(fileName, variables, dom);
 
 changeToken(start, end); 
+
+# Simple example of calling library
+
+
+javascript file
+```
+var path = 'template.html';
+var schema = { "name" : "stuff" };
+var dom = 'display';
+```
+template.html file code
+```
+<p> My name is {{name}} and only {{name}} </p>
+```
+index.html file code
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            example
+        </title>
+    </head>
+    <body onload="callJavascriptLoadFunc();">
+        <div id="display">
+        </div>
+    </body>
+</html>
+```
+End result: 
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            example
+        </title>
+    </head>
+    <body onload="callJavascriptLoadFunc();">
+        <div id="display">
+        <p> My name is stuff and only stuff </p>
+        </div>
+    </body>
+</html>
