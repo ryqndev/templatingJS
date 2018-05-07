@@ -21,7 +21,7 @@ There are only 2 public functions in the entire library and it's all related to 
 <br>
 
 * **Small file size** -
-The source file is so small, I can count the number of bytes by counting the characters and that's not using a minified file
+The source file is so small, I can count the number of bytes by counting the characters and that's not using a minified file. I just counted.. it's about 1 kb.
 <br>
 
 # How to use templateJS
