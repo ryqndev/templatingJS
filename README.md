@@ -45,7 +45,7 @@ And you're done!!
 
 ## Simple example of calling library
 
-JavaScript file:
+**JavaScript file:**
 
 ```javascript
 var path = 'template.html';
@@ -53,13 +53,13 @@ var schema = { "name" : "stuff" };
 var dom = 'display';
 ```
 
-```template.html``` file:
+**```template.html``` file:**
 
 ```html
 <p>My name is {{name}} and only {{name}}</p>
 ```
 
-```index.html``` file:
+**```index.html``` file:**
 
 ```html
 <!DOCTYPE html>
