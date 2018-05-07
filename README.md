@@ -12,17 +12,17 @@ The concept behind this is write the html/css code for it once and don't worry a
 
 # Why templateJS?
 
-* **Simplicity** 
-<br> 
+* **Simplicity**  -
 Compared to other html templating engines, such as Underscore.js or Backbone.js, templateJS serves only one function and it is to provide html templating with Javascript and you can expect to fully master it in only a couple minutes.
+<br> 
 
-* **Ease of use**
-<br>
+* **Ease of use** -
 There are only 2 public functions in the entire library and it's all related to templating
-
-* **Small file size**
 <br>
+
+* **Small file size** -
 The source file is so small, I can count the number of bytes by counting the characters and that's not using a minified file
+<br>
 
 # How to use templateJS
 
