@@ -1,5 +1,7 @@
 # templatingJS
 
+Update: template literals. apparently we've had this since es2015 and I feel dumb but I'll leave this up here in case the template literal is really large and is better off done in an html editor.
+
 ## What is templatingJS?
 
 **TL;DR** - the simplest HTML templating library using JavaScript.
